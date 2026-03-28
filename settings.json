@@ -8,7 +8,7 @@
   "server": {
     "ip": "HARSHITKINGDOM.aternos.me",
     "port": 44241,
-    "version": ""
+    "version": "false"
   },
   "position": {
     "enabled": true,
@@ -18,7 +18,7 @@
   },
   "utils": {
     "auto-auth": {
-      "enabled": false,
+      "enabled": true,
       "password": "Slobos"
     },
     "anti-afk": {
@@ -28,25 +28,27 @@
     "chat-messages": {
       "enabled": true,
       "repeat": true,
-      "repeat-delay": 500,
+      "repeat-delay": 45000, 
       "messages": [
-        "I'm a regular player",
-        "Subscribe to Slobos!",
-        "I like to play Minecraft!"
+        "Long Live King Harshit!",
+        "All Hail King Harshit of the Kingdom!",
+        "Glory to King Harshit!",
+        "The Kingdom is safe under King Harshit!"
       ]
     },
     "chat-log": true,
     "auto-reconnect": true,
-    "auto-reconnect-delay": 2000,
-    "max-reconnect-delay": 20000,
+    "auto-reconnect-delay": 500,
+    "max-reconnect-delay": 5000,
     "periodic-rejoin": {
       "enabled": true,
-      "min-interval": 20,
-      "max-interval": 60
+      "min-interval": 10,
+      "max-interval": 30
     }
   },
   "movement": {
     "enabled": true,
+    "random-intervals": true,
     "circle-walk": {
       "enabled": true,
       "radius": 4,
@@ -58,7 +60,17 @@
     },
     "random-jump": {
       "enabled": true,
-      "interval": 10000
+      "interval": 8000
+    }
+  },
+  "world-interaction": {
+    "enabled": true,
+    "random-break-place": {
+      "enabled": true,
+      "max-distance": 4,
+      "min-delay": 3000,
+      "max-delay": 20000,
+      "blacklist": ["bedrock", "air", "water", "lava"]
     }
   },
   "modules": {
@@ -72,20 +84,13 @@
     "attack-mobs": true,
     "auto-eat": true
   },
-  "beds": {
-    "pick-up-day": true,
-    "place-night": true
-  },
   "discord": {
     "enabled": true,
-    "webhookUrl": "https://discord.com/api/webhooks/1472567640521183243/7DzSIaCSM_9-5DjzrlAuP9Tdj7Y3yAP6BHg3scKzhaRFdVk8ctWBlhOc7I8l5xC6Nqm3",
+    "webhookUrl": "PRIVATE_WEBHOOK_URL",
     "events": {
       "connect": true,
       "disconnect": true,
       "chat": false
     }
-  },
-  "chat": {
-    "respond": true
   }
 }
