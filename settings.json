@@ -8,7 +8,7 @@
   "server": {
     "ip": "HARSHITKINGDOM.aternos.me",
     "port": 44241,
-    "version": ""
+    "version": "1.19.3"
   },
   "position": {
     "enabled": true,
@@ -28,7 +28,7 @@
     "chat-messages": {
       "enabled": true,
       "repeat": true,
-      "repeat-delay": 45000, 
+      "repeat-delay": 45,
       "messages": [
         "Long Live King Harshit!",
         "All Hail King Harshit of the Kingdom!",
@@ -36,19 +36,12 @@
         "The Kingdom is safe under King Harshit!"
       ]
     },
-    "chat-log": true,
     "auto-reconnect": true,
     "auto-reconnect-delay": 500,
-    "max-reconnect-delay": 5000,
-    "periodic-rejoin": {
-      "enabled": true,
-      "min-interval": 10,
-      "max-interval": 30
-    }
+    "max-reconnect-delay": 5000
   },
   "movement": {
     "enabled": true,
-    "random-intervals": true,
     "circle-walk": {
       "enabled": true,
       "radius": 4,
@@ -61,36 +54,6 @@
     "random-jump": {
       "enabled": true,
       "interval": 8000
-    }
-  },
-  "world-interaction": {
-    "enabled": true,
-    "random-break-place": {
-      "enabled": true,
-      "max-distance": 4,
-      "min-delay": 3000,
-      "max-delay": 20000,
-      "blacklist": ["bedrock", "air", "water", "lava"]
-    }
-  },
-  "modules": {
-    "avoidMobs": true,
-    "combat": true,
-    "beds": true,
-    "chat": true,
-    "console-commands": true
-  },
-  "combat": {
-    "attack-mobs": true,
-    "auto-eat": true
-  },
-  "discord": {
-    "enabled": true,
-    "webhookUrl": "PRIVATE_WEBHOOK_URL",
-    "events": {
-      "connect": true,
-      "disconnect": true,
-      "chat": false
     }
   }
 }
